@@ -1,0 +1,165 @@
+graph LR
+    Root[AUTORIDADES<br/>CIBERSEGURIDAD<br/>MÉXICO<br/>]
+    
+    Root --> Cat1[RECTORÍA Y<br/>SEGURIDAD]
+    Root --> Cat2[SECTORES<br/>FINANCIERO Y<br/>ENERGÉTICO]
+    Root --> Cat3[JUSTICIA Y<br/>PROTECCIÓN]
+    Root --> Cat4[OTROS<br/>SECTORES]
+    Root --> Cat5[ADMINISTRACIÓN<br/>INSTITUCIONAL]
+    
+    Cat1 --> SG1
+    Cat1 --> SG2
+    Cat1 --> SG3
+    Cat1 --> SG4
+    
+    subgraph SG1[RECTORÍA]
+        A1[DG Ciberseguridad<br/>ATDT]
+        A2[ATDT Autoridad<br/>Nacional]
+    end
+    
+    subgraph SG2[SEGURIDAD NACIONAL]
+        B1[CNI]
+        B2[SESNSP]
+        B3[SEDENA<br/>COC]
+        B4[SEMAR<br/>EMCOGCIBER]
+    end
+    
+    subgraph SG3[SEGURIDAD PÚBLICA]
+        C1[SSPC Unidad<br/>Inteligencia]
+        C2[SSPC DG<br/>Investigación]
+        C3[SSPC<br/>Infraestructura]
+        C4[SSPC DG<br/>Plataforma]
+        C5[GN DG<br/>Científica]
+        C6[Policías<br/>Cibernéticas 32]
+        C7[Consejo<br/>Nacional]
+        C8[Comité<br/>Ciberseguridad]
+    end
+    
+    subgraph SG4[PROCURACIÓN]
+        D1[FGR<br/>Infraestructura]
+        D2[FGR<br/>Consejo]
+        D3[FGR<br/>Gobernanza]
+        D4[FGR<br/>CENAPI]
+    end
+    
+    Cat2 --> SG5
+    Cat2 --> SG6
+    Cat2 --> SG7
+    Cat2 --> SG8
+    
+    subgraph SG5[FINANCIERO]
+        E1[Banxico<br/>Dir Ciber]
+        E2[Banxico<br/>Comité]
+        E3[Banxico<br/>SPEI]
+        E4[CNBV]
+        E5[CNBV<br/>CUB]
+        E6[CNBV<br/>IFPE]
+        E7[CNSF]
+        E8[CONSAR]
+        E9[IPAB]
+        E10[Comité<br/>ITF]
+        E11[CONDUSEF]
+        E12[UIF]
+    end
+    
+    subgraph SG6[ENERGÍA HIDRO]
+        F1[CENAGAS<br/>Jefatura]
+        F2[CENAGAS<br/>Dir Infra]
+        F3[Pemex<br/>Coord]
+        F4[Pemex<br/>Gerencia]
+        F5[IMP]
+        F6[ASEA]
+        F7[CNH CNIH]
+    end
+    
+    subgraph SG7[ENERGÍA ELÉCTRICA]
+        G1[CENACE]
+        G2[CFE<br/>Distribución]
+        G3[CFE<br/>Generación]
+        G4[CFE<br/>TEIT]
+        G5[CFE<br/>Suministrador]
+        G6[CFE<br/>Transmisión]
+        G7[CRE]
+    end
+    
+    subgraph SG8[NUCLEAR]
+        H1[CNSNS]
+    end
+    
+    Cat3 --> SG9
+    Cat3 --> SG10
+    
+    subgraph SG9[PODER JUDICIAL]
+        I1[SCJN<br/>Comisión]
+        I2[SCJN<br/>DG TI]
+        I3[CJF<br/>Facilitadoras]
+        I4[CJF<br/>SNIJ]
+        I5[Poderes<br/>Judiciales]
+        I6[TFJA]
+        I7[TEPJF]
+    end
+    
+    subgraph SG10[DATOS Y ELECTORAL]
+        J1[SABG<br/>Público]
+        J2[Autoridades<br/>Garantes]
+        J3[SABG<br/>Privado]
+        J4[INE<br/>UTSI]
+    end
+    
+    Cat4 --> SG11
+    Cat4 --> SG12
+    
+    subgraph SG11[TELECOM Y TRANSPORTE]
+        K1[CRT]
+        K2[AFAC]
+        K3[ASIPONA]
+    end
+    
+    subgraph SG12[OTROS REGULADOS]
+        L1[Salud<br/>NOM-024]
+        L2[PROFECO]
+        L3[SE<br/>PSC]
+        L4[IMPI]
+        L5[INDAUTOR]
+    end
+    
+    Cat5 --> SG13
+    Cat5 --> SG14
+    Cat5 --> SG15
+    
+    subgraph SG13[HACIENDA Y EDUCACIÓN]
+        M1[SHCP<br/>Coord SI]
+        M2[SAT<br/>AGCTI]
+        M3[ANAM]
+        M4[CONALEP]
+        M5[IPN]
+        M6[SEP]
+    end
+    
+    subgraph SG14[ESTADÍSTICA Y OTROS]
+        N1[INEGI]
+        N2[INFONAVIT]
+        N3[SNA]
+        N4[ASF]
+        N5[Sec<br/>Mujeres]
+    end
+    
+    subgraph SG15[GOBIERNO INSTITUCIONAL]
+        O1[CONAGUA]
+        O2[SEMARNAT]
+        O3[AGN]
+        O4[SEGOB<br/>RENAPO]
+        O5[SEGOB<br/>TIC]
+        O6[SRE<br/>ONU]
+        O7[SRE<br/>Globales]
+        O8[SRE<br/>TI]
+        O9[SICT]
+        O10[Otras<br/>DG TIC]
+    end
+    
+    style Root fill:#2c3e50,color:#fff,stroke:#34495e,stroke-width:4px
+    style Cat1 fill:#e74c3c,color:#fff,stroke:#c0392b,stroke-width:3px
+    style Cat2 fill:#16a085,color:#fff,stroke:#138d75,stroke-width:3px
+    style Cat3 fill:#8e44ad,color:#fff,stroke:#7d3c98,stroke-width:3px
+    style Cat4 fill:#f39c12,color:#fff,stroke:#d68910,stroke-width:3px
+    style Cat5 fill:#95a5a6,color:#fff,stroke:#7f8c8d,stroke-width:3px
